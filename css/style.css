@@ -1017,3 +1017,9 @@ p,a{
     font-weight:600
   }
 }
+
+.dashboard-box{
+    position: absolute !important;
+    z-index: 9  !important;
+    bottom: -150px !important;
+}
