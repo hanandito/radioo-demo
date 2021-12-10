@@ -434,8 +434,6 @@ p,a{
         position: absolute;
         bottom: 5%;
         right: 60px;
-        width: 250px;
-        height: 50px;
         background: #ffffff;
     }
     .header-top .download-button:hover{background: #000;}
