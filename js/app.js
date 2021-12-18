@@ -58,7 +58,7 @@ $(window).scroll(function(){
 }
 )
 
- function fetchCFI() {
+ function fetchNOW() {
     fetch('https://pass-prox.herokuapp.com/https://zenoplay.zenomedia.com/api/zenofm/nowplaying/ev290deb2c9uv')
       .then(response => {
         if (!response.ok) {
@@ -67,16 +67,16 @@ $(window).scroll(function(){
         return response.json();
       })
       .then(dataWrapCFI => {
-        console.log(dataWrapCFI);
+        console.log(dataWrapNOW);
 
         // ============ Display Indonesia Covid 19 Cases 1 ============
-        const getDataCFI1 = dataWrapCFI;
-        const displayDataCFI1 = `${getDataCFI1.title}`;
-        document.querySelector('#iCFI1').insertAdjacentHTML('afterbegin', displayDataCFI1);
+        const getDataNow = dataWrapNOW;
+        const displayDataNow = `${getDataNow.title}`;
+        document.querySelector('#title_header').insertAdjacentHTML('afterbegin', displayDataNow);
         
       })
       .catch(error => {
         console.log(error);
       });
   }
-  fetchCFI();
+  fetchNOW();
