@@ -59,7 +59,7 @@ $(window).scroll(function(){
 )
 
  function fetchCFI() {
-    fetch('https://pass-prox.herokuapp.com/https://zenoplay.zenomedia.com/api/zenofm/nowplaying/ev290deb2c9uv')
+    fetch('https://zenoplay.zenomedia.com/api/zenofm/nowplaying/ev290deb2c9uv')
       .then(response => {
         if (!response.ok) {
           throw Error('ERROR');
