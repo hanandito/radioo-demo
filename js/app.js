@@ -70,7 +70,7 @@ $(window).scroll(function(){
         console.log(dataWrapCFI);
 
         // ============ Display Indonesia Covid 19 Cases 1 ============
-        const getDataCFI1 = dataWrapCFI.update.harian[0];
+        const getDataCFI1 = dataWrapCFI.title;
         const displayDataCFI1 = `${getDataCFI1.jumlah_positif_kum.value}`;
         document.querySelector('#iCFI1').insertAdjacentHTML('afterbegin', displayDataCFI1);
         
