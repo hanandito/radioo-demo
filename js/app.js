@@ -73,6 +73,9 @@ $(window).scroll(function(){
         const getDataNow = dataWrapNOW;
         const displayDataNow = `${getDataNow.title}`;
         document.querySelector('#title_header').insertAdjacentHTML('afterbegin', displayDataNow);
+
+        const displayDataArtist = `${getDataNow.artist}`;
+        document.querySelector('#artist_header').insertAdjacentHTML('afterbegin', displayDataArtist);
         
       })
       .catch(error => {
