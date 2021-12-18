@@ -1021,3 +1021,12 @@ p,a{
     z-index: 9  !important;
     bottom: -150px !important;
 }
+
+.now-playing-radio{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
