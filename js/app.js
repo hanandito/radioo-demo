@@ -66,7 +66,7 @@ $(window).scroll(function(){
         }
         return response.json();
       })
-      .then(dataWrapCFI => {
+      .then(dataWrapNOW => {
         console.log(dataWrapNOW);
 
         // ============ Display Indonesia Covid 19 Cases 1 ============
