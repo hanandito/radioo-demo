@@ -74,20 +74,6 @@ $(window).scroll(function(){
         const displayDataCFI1 = `${getDataCFI1.jumlah_positif_kum.value}`;
         document.querySelector('#iCFI1').insertAdjacentHTML('afterbegin', displayDataCFI1);
         
-        // ============ Display Indonesia Covid 19 Cases 2 ============
-        const getDataCFI2 = dataWrapCFI.update.harian[18];
-        const displayDataCFI2 = `${getDataCFI2.jumlah_positif_kum.value}`;
-        document.querySelector('#iCFI2').insertAdjacentHTML('afterbegin', displayDataCFI2);
-        
-        // ============ Display Indonesia Covid 19 Cases 3 ============
-        const getDataCFI3 = dataWrapCFI.update.harian[44];
-        const displayDataCFI3 = `${getDataCFI3.jumlah_positif_kum.value}`;
-        document.querySelector('#iCFI3').insertAdjacentHTML('afterbegin', displayDataCFI3);
-        
-        // ============ Display Indonesia Covid 19 Cases 4 ============
-        const getDataCFI4 = dataWrapCFI.update;
-        const displayDataCFI4 = `${getDataCFI4.total.jumlah_positif}`;
-        document.querySelector('#iCFI4').insertAdjacentHTML('afterbegin', displayDataCFI4);
       })
       .catch(error => {
         console.log(error);
