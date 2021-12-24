@@ -59,7 +59,7 @@ $(window).scroll(function(){
 )
 
  function fetchNOW() {
-    fetch('https://pass-prox.herokuapp.com/https://zenoplay.zenomedia.com/api/zenofm/nowplaying/ev290deb2c9uv')
+    fetch('https://pass-prox.herokuapp.com/https://zenoplay.zenomedia.com/api/zenofm/nowplaying/8h3495u5n48uv')
       .then(response => {
         if (!response.ok) {
           throw Error('ERROR');
