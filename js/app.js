@@ -69,7 +69,7 @@ $(window).scroll(function(){
       .then(dataWrapNOW => {
         console.log(dataWrapNOW);
 
-        // ============ Display Indonesia Covid 19 Cases 1 ============
+        // ============ Display Details ============
         const getDataNow = dataWrapNOW;
         const displayDataNow = `${getDataNow.title}`;
         document.querySelector('#title_header').insertAdjacentHTML('afterbegin', displayDataNow);
