@@ -16,6 +16,32 @@
       $('.side-menu').removeClass("active");
     })
   });
+  
+   
+  $('.carousel-homebanner').addClass('owl-carousel owl-theme').owlCarousel({
+    navText: ["<i class='fal fa-chevron-left text-white'></i>","<i class='fal fa-chevron-right text-white'></i>"],
+    autoplay:false,
+    autoplayTimeout: 5000,
+    loop: true,
+    responsive:{
+     0: {
+       items: 1,
+       dots: true,
+       nav: false
+     },
+     600: {
+       items: 1,
+       nav: false
+     },
+     1000: {
+       items: 1,
+       dots: false,
+       nav: true
+     }
+   }
+ })
+  
+ 
 
   var lFollowX = 0,
     lFollowY = 0,
@@ -83,3 +109,25 @@ $(window).scroll(function(){
       });
   }
   fetchNOW();
+
+  
+  //Create classOnScroll function
+  function classOnScroll(){
+    let $box = $('.menu-wrap'),
+        $scroll = $(window).scrollTop();
+    
+    if($scroll > 40){
+      if(!$box.hasClass('scrolled')) 
+        $box.addClass('scrolled');
+    }
+    else
+      $box.removeClass('scrolled');
+  
+  }
+  
+  //Run on first site run
+  classOnScroll();
+  
+  //Run on scroll and resize
+  $(window).on('scroll resize',classOnScroll);
+
