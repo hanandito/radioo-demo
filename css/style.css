@@ -439,4 +439,5 @@ a#player-audio {
 }
 .menu-nifty ul li a.active{
   color: #6154D6;
+  font-weight: bold;
 }
