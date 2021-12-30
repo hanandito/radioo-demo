@@ -473,4 +473,33 @@ a#player-audio {
   .carousel-homebanner .paginations{
     right: 45px;
   }
+  .sideNav{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    right: -100%;
+    top: 0;
+    background-color: #000;
+    z-index: 1;
+  }
+  .sideNav.active{
+    right: 0;
+  }
+  .sideNav ul{
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    margin: auto;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    text-align: center;
+    padding: 0;
+  }
+  .sideNav ul li a{
+    color: #fff;
+    font-size: 20px;
+  }
+  .sideNav ul li a.active{
+    color: #6154D6;
+  }
 }
