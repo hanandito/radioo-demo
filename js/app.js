@@ -3,17 +3,11 @@
     AOS.init({
       duration: 1200
     });
-    $('nav .burger').click(function() {
+    $('.menu-icon .fa-bars').click(function() {
       $('.sideNav').addClass("active");
     })
-    $('.closeSideNav').click(function() {
+    $('.close-nav').click(function() {
       $('.sideNav').removeClass("active");
-    })
-    $('.menu-icon').click(function() {
-      $('.side-menu').addClass("active");
-    })
-    $('.close-menu-icon').click(function() {
-      $('.side-menu').removeClass("active");
     })
   });
   
