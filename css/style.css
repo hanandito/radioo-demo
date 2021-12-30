@@ -446,6 +446,9 @@ a#player-audio {
   color: #6154D6;
   font-weight: bold;
 }
+.now-playing-radio .marquee marquee{
+  width: 300px;
+}
 @media screen and (max-width: 414px) {
   .banner-text h1{
     padding: 20px;
@@ -455,5 +458,16 @@ a#player-audio {
   }
   .banner-text{
     width: 100vw;
+  }
+  .carousel-homebanner .owl-dots {
+    left: 30px;
+  }
+  .now-playing-radio .marquee marquee{
+    width: 200px;
+  }
+  .logo-footer{
+    text-align: center;
+    margin: auto;
+    display: inherit;
   }
 }
