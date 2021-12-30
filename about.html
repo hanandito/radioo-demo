@@ -18,16 +18,16 @@
 <body>
   <div id="main">
     <div class="container-fluid menu-wrap">
-      <div class="row py-lg-4 top-menu-wrap px-lg-5">
-        <div class="col-lg-6">
+      <div class="row py-lg-4 py-3 top-menu-wrap px-lg-5 px-2">
+        <div class="col-6">
           <div class="logo">
             <a href="index.html">
               <img src="images/nifty-logo-white-05.png" alt="">
             </a>
           </div>
         </div>
-        <div class="col-lg-6">
-          <div class="menu-nifty float-right">
+        <div class="col-6">
+          <div class="menu-nifty float-right d-none d-lg-block">
             <ul class="list-style-none mb-lg-0">
               <li>
                 <a href="programs.html">Programs</a>
@@ -36,39 +36,35 @@
                 <a href="archives.html">Archives</a>
               </li>
               <li>
-                <a class="active" href="about.html">About</a>
+                <a  class="active" href="about.html">About</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-icon float-right d-lg-none">
+            <a href="#">
+              <h4>
+                <i class="fal fa-bars text-white"></i>
+              </h4>
+            </a>
+          </div>
+          <div class="sideNav">
+            <h4 class="close-nav text-white float-right  mr-4 mt-3">
+                <i class="fal fa-times"></i>
+            </h4>
+            <ul class="list-style-none mb-lg-0">
+              <li>
+                <a href="programs.html">Programs</a>
+              </li>
+              <li>
+                <a href="archives.html">Archives</a>
+              </li>
+              <li>
+                <a class="active"  href="about.html">About</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="now-playing-radio row px-lg-5">
-        <div class="col-lg-12 px-lg-3">
-          <div class="d-flex">
-            <h6 class="text-black mr-lg-3 mb-lg-0 mt-lg-1 font-spacemono-reg font-weight-bold">
-              <span class="red-dot blink">
-                
-              </span>
-              LIVE
-            </h6>
-            <a id="button_player"><i class="far fa-play"></i></a>
-            <audio id="player-audio">
-              <source src="https://node-14.zeno.fm/myyve6u5n48uv?rj-ttl=5&amp;rj-tok=AAABfetti6AA7EsVGPn5gCqURA" type="audio/ogg">
-              <source src="https://node-14.zeno.fm/myyve6u5n48uv?rj-ttl=5&amp;rj-tok=AAABfetti6AA7EsVGPn5gCqURA" type="audio/mpeg">
-              Your browser does not support the audio element.
-            </audio>
-            <div class="marquee mt-lg-1 ml-lg-4">
-              <p class="text-black mb-0 font-spacemono-reg">
-                <marquee width="300">
-                  Artist <span class="font-weight-bold text-black mr-lg-5" id="artist_header"></span>
-                  Title <span class="font-weight-bold text-black" id="title_header"></span>
-                </marquee>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="container-fluid about-wrap">
       <div class="row">
         <div class="col-lg-10 offset-lg-1">
