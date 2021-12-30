@@ -212,7 +212,8 @@ p,a{
 }
 .copyright-text
 {
-  margin:0
+  margin:0;
+  font-size: 0.7rem;
 }
 @media (max-width:991px)
 {
