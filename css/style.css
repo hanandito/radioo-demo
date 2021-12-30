@@ -137,6 +137,9 @@ p,a{
 .menu-nifty ul li a{
     color: #fff;
 }
+.menu-nifty.inverted ul li a{
+    color: #000;
+}
 .site-footer
 {
   background-color:#000;
@@ -428,7 +431,7 @@ p,a{
     background-position: center;
     background-repeat: no-repeat;
     padding-top: 170px;
-    padding-bottom: 50px;
+    padding-bottom: 170px;
 }
 hr{    border-top: 1px solid #000;}
 
