@@ -140,6 +140,9 @@ p,a{
 .menu-nifty.inverted ul li a{
     color: #fff;
 }
+.menu-wrap.scrolled .menu-nifty ul li a{
+  color: #fff;
+}
 .site-footer
 {
   background-color:#000;
@@ -464,7 +467,7 @@ a#player-audio {
   border: none;
   color: black;
 }
-.menu-nifty ul li a.active{
+.menu-nifty ul li a.active, .menu-wrap.scrolled .menu-nifty ul li a.active{
   color: #6154D6;
   font-weight: bold;
 }
