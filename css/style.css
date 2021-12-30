@@ -527,4 +527,13 @@ a#player-audio {
   .sideNav ul li a.active{
     color: #6154D6;
   }
+  .menu-icon .fa-bars{
+    color: #000;
+  }
+  .menu-wrap.scrolled .menu-icon .fa-bars{
+    color: #fff;
+  }
+  .menu-icon.inverted .fa-bars{
+    color: #fff;
+  }
 }
