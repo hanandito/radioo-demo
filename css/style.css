@@ -470,4 +470,7 @@ a#player-audio {
     margin: auto;
     display: inherit;
   }
+  .carousel-homebanner .paginations{
+    right: 45px;
+  }
 }
