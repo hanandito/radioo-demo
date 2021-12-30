@@ -134,12 +134,12 @@ $(window).scroll(function(){
         if (playing == false) {
             document.getElementById('player-audio').play();
             playing = true;
-            $(this).html("<i class='far fa-pause'></i>");
+            $(this).html("<i class='fas fa-pause'></i>");
 
         } else {
             document.getElementById('player-audio').pause();
             playing = false;
-            $(this).html("<i class='far fa-play'></i>");
+            $(this).html("<i class='fas fa-play'></i>");
         }
 
 
