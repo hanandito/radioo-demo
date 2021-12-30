@@ -386,6 +386,11 @@ p,a{
 .carousel-homebanner.owl-theme .owl-dots .owl-dot.active span, .carousel-homebanner.owl-theme .owl-dots .owl-dot:hover span{
   opacity: 1;
 }
+.carousel-homebanner.owl-theme img{
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
 .menu-wrap.scrolled{
     background-color: none;
 }
@@ -440,4 +445,15 @@ a#player-audio {
 .menu-nifty ul li a.active{
   color: #6154D6;
   font-weight: bold;
+}
+@media screen and (max-width: 414px) {
+  .banner-text h1{
+    padding: 20px;
+    transform: none;
+    margin: auto;
+    font-size: 2rem;
+  }
+  .banner-text{
+    width: 100vw;
+  }
 }
