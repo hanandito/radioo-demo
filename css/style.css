@@ -410,6 +410,9 @@ p,a{
 .menu-wrap.scrolled .logo .black{
   display: none;
 }
+.menu-wrap .logo.inverted .white{
+  display: block;
+}
 .menu-wrap .logo.inverted .black{
   display: none;
 }
