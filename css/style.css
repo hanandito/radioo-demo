@@ -329,10 +329,6 @@ p,a{
 }
 .now-playing-radio{
     background: rgba(255, 255, 255, 0.5);
-    margin-right: -60px !important;
-    margin-left: -60px !important;
-    padding-left: 60px;
-    padding-right: 60px;
 }
 .banner-text{
     position: absolute;
@@ -343,13 +339,19 @@ p,a{
 }
 .carousel-homebanner .paginations{
     position: absolute;
-    right: 70px;
+    right: 90px;
     top: 130px;
 }
 .link-support{
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     padding: 10px 30px;
     color: #fff !important;
+    letter-spacing: 2.5px;
+    font-weight: bold;
+}
+.link-support:hover{
+  color: #000 !important;
+  background-color: #fff;
 }
 .carousel-homebanner .owl-next{
     position: absolute;
@@ -372,8 +374,23 @@ p,a{
 .carousel-homebanner .owl-nav{
     margin-top: 0;
 }
+.carousel-homebanner .owl-dots{
+  position: absolute;
+  bottom: 20px;
+  left: 60px;
+}
+.carousel-homebanner.owl-theme .owl-dots .owl-dot span{
+  background: #fff;
+  opacity: .3;
+}
+.carousel-homebanner.owl-theme .owl-dots .owl-dot.active span, .carousel-homebanner.owl-theme .owl-dots .owl-dot:hover span{
+  opacity: 1;
+}
 .menu-wrap.scrolled{
-    background-color: #000;
+    background-color: none;
+}
+.menu-wrap.scrolled .top-menu-wrap{
+  background-color: #000;
 }
 .archives-wrap{
     background-image: url(../images/archive-bg-05.jpg);
@@ -401,7 +418,7 @@ p,a{
     border: 2px solid #000;
 }
 .programs-wrap{
-    background-image: url(../images/bg-03.jpg);
+    background-image: url(../images/bg-04.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -409,3 +426,17 @@ p,a{
     padding-bottom: 50px;
 }
 hr{    border-top: 1px solid #000;}
+
+a#button_player {
+  cursor: pointer;
+  padding: 5px 5px;  
+  color: black;         
+  }
+
+a#player-audio {
+  border: none;
+  color: black;
+}
+.menu-nifty ul li a.active{
+  color: #6154D6;
+}

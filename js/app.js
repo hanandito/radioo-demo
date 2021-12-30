@@ -35,7 +35,7 @@
      },
      1000: {
        items: 1,
-       dots: false,
+       dots: true,
        nav: true
      }
    }
@@ -130,4 +130,25 @@ $(window).scroll(function(){
   
   //Run on scroll and resize
   $(window).on('scroll resize',classOnScroll);
+
+  $(document).ready(function() {
+    var playing = false;
+
+    $('a#button_player').click(function() {
+        $(this).toggleClass("down-play");
+
+        if (playing == false) {
+            document.getElementById('player-audio').play();
+            playing = true;
+            $(this).html("<i class='far fa-pause'></i>");
+
+        } else {
+            document.getElementById('player-audio').pause();
+            playing = false;
+            $(this).html("<i class='far fa-play'></i>");
+        }
+
+
+    });
+});
 
