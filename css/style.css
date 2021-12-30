@@ -135,7 +135,7 @@ p,a{
     margin: 0 10px;
 }
 .menu-nifty ul li a{
-    color: #fff;
+    color: #000;
 }
 .menu-nifty.inverted ul li a{
     color: #fff;
@@ -400,6 +400,21 @@ p,a{
 }
 .menu-wrap.scrolled .top-menu-wrap{
   background-color: #000;
+}
+.menu-wrap .logo .white{
+  display: none;
+}
+.menu-wrap.scrolled .logo .white{
+  display: block;
+}
+.menu-wrap.scrolled .logo .black{
+  display: none;
+}
+.menu-wrap .logo.inverted .black{
+  display: none;
+}
+.menu-wrap.scrolled .logo.inverted .white{
+  display: block;
 }
 .archives-wrap{
     background-image: url(../images/archive-bg-05.jpg);
